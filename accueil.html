@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petit message 💌</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: #ffd2e8; /* fond uni blanc */
+      color: #333;      /* texte sombre */
+      padding: 20px;
+    }
+
+    .container {
+      background: #ffffff;  /* cadre blanc */
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* léger ombrage */
+      max-width: 600px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #db4076; /* couleur du texte pour le rendre visible */
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background: #ff4d6d;
+      color: white;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>
+      Mijn zon, je t'ai concocté un petit site. J'ai voulu te faire une petite surprise et je me suis dit, quoi de mieux qu'un truc bien nerdesque pour te faire plaisir ?<br>
+      Alors voici le petit site que j'ai créé, sois indulgent s'il te plaît, je rappelle que je suis nulle pour coder ahah. 
+      J'espère que ça te fera au moins un petit peu sourire, et que ça rendra ta journée un peu moins fatigante. Je t'aime fort mon amour. 
+    </p>
+    <p>
+    Angie 
+    </p>
+    <button id="continueBtn">Continuer</button>
+  </div>
+
+  <script>
+    document.getElementById('continueBtn').addEventListener('click', () => {
+      window.location.href = "index.html"; // vers ta page principale
+    });
+  </script>
+</body>
+</html>
+
+
+
