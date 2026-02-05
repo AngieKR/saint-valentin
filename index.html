@@ -54,12 +54,13 @@
 
     button {
       font-size: 1.2rem;
-      padding: 12px 25px;
+      padding: 14px 29px;
       border: none;
       border-radius: 12px;
       cursor: pointer;
-      transition: 0.2s;
+      transition: 0.1s;
       position: absolute;
+      white-space: nowrap;
     }
 
     #yes {
@@ -86,7 +87,7 @@
   <div id="hearts-background">
     <div class="heart" style="left: 50px; top: 50px;">❤️</div>
     <div class="heart" style="left: 150px; top: 80px;">❤️</div>
-    <div class="heart" style="left: 250px; top: 120px;">❤️</div>
+    <div class="heart" style="left: 380px; top: 220px;">❤️</div>
     <div class="heart" style="left: 350px; top: 60px;">❤️</div>
     <div class="heart" style="left: 450px; top: 150px;">❤️</div>
     <div class="heart" style="left: 550px; top: 100px;">❤️</div>
@@ -144,15 +145,24 @@
     <div class="heart" style="left: 1477px; top: 546px;">❤️</div>
     <div class="heart" style="left: 1345px; top: 575px;">❤️</div>
     <div class="heart" style="left: 1259px; top: 621px;">❤️</div>
+    <div class="heart" style="left: 59px; top: 631px;">❤️</div>
+    <div class="heart" style="left: 12px; top: 531px;">❤️</div>
+    <div class="heart" style="left: 19px; top: 331px;">❤️</div>
+    <div class="heart" style="left: 34px; top: 131px;">❤️</div>
+    <div class="heart" style="left: 644px; top: 21px;">❤️</div>
+    <div class="heart" style="left: 634px; top: 621px;">❤️</div>
+    <div class="heart" style="left: 1194px; top: 19px;">❤️</div>
+    <div class="heart" style="left: 275px; top: 389px;">❤️</div>
+
 
   </div>
 
   <div class="box">
-    <h1>Veux-tu être mon Valentin ?</h1>
+    <h1>Mijn zon, veux-tu être mon Valentin ? 😇</h1>
 
     <div class="buttons">
-      <button id="yes">Oui</button>
-      <button id="no">Non</button>
+      <button id="yes">Oui 🤍</button>
+      <button id="no">Non 😢</button>
     </div>
   </div>
 
@@ -168,9 +178,9 @@
     noBtn.style.top = startY + "px";
 
     function moveNoButton() {
-      const maxRange = 130; // distance max autour du point de départ
-      const minMove = 70;   // distance min pour vraiment fuir
-      const padding = 20;
+      const maxRange = 200; // distance max autour du point de départ
+      const minMove = 100;   // distance min pour vraiment fuir
+      const padding = 40;
 
       let dx, dy;
 
